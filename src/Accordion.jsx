@@ -21,8 +21,6 @@ function ExperienceCard ({exp, isExpanded, setIsExpanded}){
                 <h3 className='text-base group-hover:!text-cyan'>{exp.position}</h3>
                 <div className='mb-2'>at {exp.company}</div>
                 <SkillList skList={exp.skills}/>
-                {/* Additional content */}
-
             </div>
             <div id="collapse_indicator"
             className={`text-2xl ml-auto mr-4 cursor-pointer ${
@@ -64,8 +62,8 @@ function ExpandContent ({exp, isExpanded}) {
             <div className='mt-1.5'>
                 <b>Description: </b>
                 <ul className='pb-4 list-disc list-inside'>
-                    {exp.description.map((bp) => (
-                        <li className='w-4/5 text-sm'>{bp}</li>
+                    {exp.description.map((bp, index) => (
+                        <li key={index} className='w-4/5 text-sm'>{bp}</li>
                     ))}
 
                 </ul>

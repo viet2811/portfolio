@@ -1,6 +1,6 @@
 function SkillCard ({name}) {
     return (
-        <div class="bg-[#193755] text-[#55d7d4] w-max px-4 py-1.5 rounded-3xl mr-2.5 text-sm">
+        <div className="bg-[#193755] text-[#55d7d4] w-max px-4 py-1.5 rounded-3xl mr-2.5 text-sm">
             {name}
         </div>
     );
@@ -11,8 +11,8 @@ function SkillCard ({name}) {
 function SkillList({skList}) {
     return (
       <div className="inline-flex flex-wrap">
-            {skList.map((skill) => (
-                <SkillCard name={skill}/>   
+            {skList.map((skill, index) => (
+                <SkillCard key={index} name={skill}/>   
             ))}
         </div>
     );
