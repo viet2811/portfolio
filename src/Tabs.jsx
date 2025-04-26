@@ -34,7 +34,7 @@ function Tabs(){
             <>
                 <SkillCard label="Python" imageadr="/icon/python.svg" />
                 <SkillCard label="Java" imageadr="/icon/java.svg" />
-                <SkillCard label="Flask" imageadr="/icon/flask.svg" />
+                <SkillCard label="Flask" imageadr="/icon/flask-white.svg" />
             </>
 
         ),
@@ -61,8 +61,8 @@ function Tabs(){
                 <div id="tabs" className="flex flex-wrap border-b">
                     {tabs.map((tab) => (
                         <button key={tab.id}
-                        className={`px-4 py-2 font-semibold ${
-                            activeTab === tab.id ? "border-b-2 border-cyan text-cyan"
+                        className={`px-4 py-2 font-semibold w-28 mr-4 ${
+                            activeTab === tab.id ? "border-b-2 border-cyan text-cyan text-shadow-md/20 text-shadow-cyan-500/50"
                             : "hover:text-cyan"
                         }`}
                         onClick={() => setActiveTab(tab.id)}

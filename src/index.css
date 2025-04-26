@@ -12,10 +12,19 @@ html {
     --color-cyan: #5ae1d4;
     --color-green: #00ff00;
     --color-whitespace: #f5f5f5;
+    --color-gray-border: #8f99b6;
 }
 
 h1,
 h2,
 h3 {
-    @apply font-inter text-whitespace
+    @apply font-inter text-whitespace font-bold
+}
+
+#expand-content b {
+    @apply font-code text-cyan text-sm
+}
+
+.ml-25\.35 {
+    margin-left: calc(var(--spacing) * 25.35)
 }
