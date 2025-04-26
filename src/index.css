@@ -28,3 +28,7 @@ h3 {
 .ml-25\.35 {
     margin-left: calc(var(--spacing) * 25.35)
 }
+
+nav b {
+    @apply text-cyan
+}

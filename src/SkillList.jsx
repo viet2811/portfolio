@@ -1,6 +1,6 @@
 function SkillCard ({name}) {
     return (
-        <div className="bg-[#193755] text-[#55d7d4] w-max px-4 py-1.5 rounded-3xl mr-2.5 text-sm">
+        <div className="bg-[#193755] text-[#55d7d4] w-max px-4 py-1 rounded-full mr-2.5 text-sm">
             {name}
         </div>
     );
