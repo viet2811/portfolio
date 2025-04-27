@@ -1,0 +1,35 @@
+{
+    "project1": {
+        "name": "Portfolio 2.0 (Current)",
+        "description": "Refactor version built with React and Tailwind featuring dynamic content loading, light/dark mode and mobile responsiveness",
+        "skills": [
+            "React",
+            "Tailwind CSS",
+            "Vite"
+        ],
+        "link": "#",
+        "gitrepo": "https://github.com/viet2811/portfolio" 
+    },
+    "project2": {
+        "name": "Portfolio 1.0",
+        "description": "A university project portfolio built with static HTML, CSS, and JavaScript with WCAG 2 guidelines in mind when designing for accessibility and usability.",
+        "skills": [
+            "HTML/CSS",
+            "JavaScript",
+            "WAVE"
+        ],
+        "link": "https://vh23aad.github.io/portfolio/",
+        "gitrepo": "https://github.com/vh23aad/portfolio"
+    },
+    "project3": {
+        "name": "Syntax Squad",
+        "description": "A unfinished team project of cooking recipes website with multi-ingredients search feature. This card only for testing purpose lmao.",
+        "skills": [
+            "Python",
+            "Flask",
+            "SQlite"
+        ],
+        "link": "",
+        "gitrepo": ""
+    }
+}

@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function SkillCard ({label, imageadr}){
     return (
-        <div className="w-28 h-28 border rounded-2xl flex flex-col items-center justify-center mr-4 shadow-md shadow-cyan-500/50">
+        <div className="w-28 h-28 border rounded-2xl flex flex-col items-center justify-center shadow-md shadow-cyan-500/50">
             <img src={imageadr} alt={label + " logo"} className="w-12 h-12 mb-2" />
             {label}
         </div>
@@ -73,7 +73,7 @@ function Tabs(){
                     ))}
                 </div>
 
-                <div id="tabs-content" className="flex mt-4">
+                <div id="tabs-content" className="flex flex-wrap mt-4 gap-4">
                     {tabContent[activeTab]}
                 </div>
             </div>

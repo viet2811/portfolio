@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 html {
-    @apply text-[#8f99b6] font-mono appearance-none text-lg bg-gradient-to-r bg-[#0a192f];
+    @apply text-[#8f99b6] font-mono appearance-none text-lg bg-[#0a192f];
 }
 
 @theme {
