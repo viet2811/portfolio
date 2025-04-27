@@ -1,6 +1,6 @@
 function NavBar() {
     return (
-        <nav className="flex w-screen fixed top-0 bg-deepnavy h-10 justify-end pr-5" aria-label="Breadcrumb">
+        <nav className="flex w-screen fixed top-0 bg-deepnavy h-10 justify-end pr-5 z-50" aria-label="Breadcrumb">
             <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
                 <li className="inline-flex items-center">
                     <a href="#about-me" className="inline-flex items-center text-sm font-medium

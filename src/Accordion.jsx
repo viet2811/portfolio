@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import Experiences from './experience.json'
+import Experiences from './data/experience.json'
 import SkillList from './SkillList';
 
 
@@ -23,7 +23,7 @@ function ExperienceCard ({exp, isExpanded, setIsExpanded}){
                 <SkillList skList={exp.skills}/>
             </div>
             <div id="collapse_indicator"
-            className={`text-2xl ml-auto mr-4 cursor-pointer ${
+            className={`text-2xl ml-auto mr-4 cursor-pointer z-10 ${
                 isExpanded ? "-rotate-90" : "rotate-90"
             } transition-transform duration-500 ease-in`}
             onClick={() => setIsExpanded(!isExpanded)}>
