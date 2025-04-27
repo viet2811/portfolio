@@ -23,7 +23,7 @@ function App() {
         {workKeys.map((key) => (
           <Accordion workID={key} key={key} />
         ))}
-        <h2 className="text-xl mt-24 mb-2" id="work-experience">Individual Project</h2>
+        <h2 className="text-xl mt-24 mb-2" id="project">Individual Project</h2>
         <ProjectList />
       </main>
       <Footer />
