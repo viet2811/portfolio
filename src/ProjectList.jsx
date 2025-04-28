@@ -8,7 +8,7 @@ function ProjectCard ({prj}){
             "
         >
             <a href={prj.link} target="_blank">
-                <h5 className="mb-2 text-base font-semibold tracking-tight hover:text-cyan hover:underline text-gray-900 dark:text-white">{prj.name}</h5>
+                <h5 className="mb-2 text-base font-semibold tracking-tight hover:text-blue-500 dark:hover:text-cyan hover:underline text-gray-900 dark:text-white">{prj.name}</h5>
             </a>
             <p className="mb-3 font-normal text-sm text-gray-500 dark:text-gray-400">{prj.description}</p>
             <SkillList skList={prj.skills}/>
