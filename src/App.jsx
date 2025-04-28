@@ -16,7 +16,7 @@ function App() {
 
         <div id="about-me" className="scroll-mt-10 mt-12">
           <div className="font-code dark:text-green text-green-600">Hi, I am</div>
-          <h1 className="text-2xl md:text-3xl my-4">Viet Anh Hoang</h1>
+          <h1 className="text-2xl md:text-3xl my-2 md:my-4">Viet Anh Hoang</h1>
           <AboutCard /> 
           <h2 className="text-xl mt-8 mb-1">Technical Skills</h2>
           <Tabs /> 

@@ -32,7 +32,7 @@ function NavBar() {
 
     return (
         <nav 
-            className="flex w-screen fixed top-0 h-10 justify-end pr-5 z-50
+            className="flex w-screen fixed top-0 h-10 justify-end pr-1.5 md:pr-5 z-50
             bg-ivory dark:bg-deepnavy" 
             aria-label="Breadcrumb"
         >
