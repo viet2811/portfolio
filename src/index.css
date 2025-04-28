@@ -3,9 +3,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 html {
-    @apply font-mono appearance-none text-lg
+    @apply font-mono appearance-none text-sm md:text-lg
     bg-ivory text-gray-600 /*Light mode*/
-    dark:bg-deepnavy dark:text-[#8f99b6]/*Dark mode; */;
+    dark:bg-deepnavy dark:text-gray/*Dark mode; */;
 }
 
 @theme {
@@ -16,7 +16,7 @@ html {
     --color-cyan: #5ae1d4;
     --color-green: #00ff00;
     --color-whitespace: #f5f5f5;
-    --color-gray-border: #8f99b6;
+    --color-gray: #8f99b6;
     --color-ivory: #fef9f4;
 }
 

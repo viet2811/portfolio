@@ -3,12 +3,17 @@ import Projects from "./data/project.json"
 
 function ProjectCard ({prj}){
     return (
-        <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm
-            dark:bg-[#192942] dark:border-gray-700
-            "
+        <div className="md:max-w-sm p-6 rounded-lg bg-white border border-gray-200  shadow-sm
+            dark:bg-[#192942] dark:border-gray-700 flex flex-col"
         >
             <a href={prj.link} target="_blank">
-                <h5 className="mb-2 text-base font-semibold tracking-tight hover:text-blue-500 dark:hover:text-cyan hover:underline text-gray-900 dark:text-white">{prj.name}</h5>
+                <h3 
+                 className="mb-2 !font-mono font-semibold tracking-tight hover:underline 
+                text-gray-900 hover:text-blue-500
+                dark:hover:text-cyan dark:text-white"
+                >
+                    {prj.name}
+                </h3>
             </a>
             <p className="mb-3 font-normal text-sm text-gray-500 dark:text-gray-400">{prj.description}</p>
             <SkillList skList={prj.skills}/>
@@ -30,7 +35,7 @@ function ProjectCard ({prj}){
 function ProjectList() {
     const data = Object.entries(Projects)
     return (
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {data.map(([key, value]) => (
                 <ProjectCard key={key} prj={value} />
             ))}

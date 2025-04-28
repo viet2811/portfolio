@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 function NavBar() {
     const [isDarkMode, setIsDarkMode] = useState(true);
 
+    // Check for user preferences of theme
     useEffect(() => {
         const savedPreference = localStorage.getItem("color-theme");
         if (savedPreference === "dark") {
@@ -12,7 +13,7 @@ function NavBar() {
             setIsDarkMode(false);
             document.documentElement.classList.remove("dark");
         }
-    }, [])
+    }, []) //Empty array ensures effect runs ONCE
 
     // Toggle dark mode
     const toggleDarkMode = () => {
@@ -30,40 +31,41 @@ function NavBar() {
     };
 
     return (
-        <nav className="flex w-screen fixed top-0 bg-ivory dark:bg-deepnavy h-10 justify-end pr-5 z-50" aria-label="Breadcrumb">
+        <nav 
+            className="flex w-screen fixed top-0 h-10 justify-end pr-5 z-50
+            bg-ivory dark:bg-deepnavy" 
+            aria-label="Breadcrumb"
+        >
             <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
                 <li className="inline-flex items-center">
-                    <a href="#about-me" className="inline-flex items-center text-sm font-medium
+                    <a href="#about-me" className="inline-flex items-center text-xs md:text-sm font-medium
                      text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
                         <b>00.</b>&nbsp;About me</a>
                 </li>
                 <li>
                     <div className="flex items-center">
+                        {/* Arrow svg */}
                         <svg className="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4" />
                         </svg>
-                        <a href="#work-experience" className="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2
+                        <a href="#work-experience" className="ms-1 text-xs md:text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2
                          dark:text-gray-400 dark:hover:text-white">
                          <b>01.</b> Experience</a>
                     </div>
                 </li>
                 <li>
                     <div className="flex items-center">
+                        {/* Arrow svg */}
                         <svg className="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4" />
                         </svg>
-                        <a href="#project" className="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2
+                        <a href="#project" className="ms-1 text-xs md:text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2
                          dark:text-gray-400 dark:hover:text-white">
                             <b>02.</b> Project</a>                    
                     </div>
                 </li>
                 <li>
-                    {/* <button 
-                        type="button" 
-                        className="text-gray-900 bg-white border border-gray-300 hover:bg-gray-100 
-                        font-medium rounded-xl text-sm px-1 py-1 me-2 mb-2
-                        dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700
-                     ">☀️</button> */}
+                    {/* Light/Dark mode button */}
                     <button 
                         type="button" 
                         onClick={toggleDarkMode} 
@@ -80,7 +82,6 @@ function NavBar() {
                                 <path d="M17.8 13.75a1 1 0 0 0-.859-.5A7.488 7.488 0 0 1 10.52 2a1 1 0 0 0 0-.969A1.035 1.035 0 0 0 9.687.5h-.113a9.5 9.5 0 1 0 8.222 14.247 1 1 0 0 0 .004-.997Z"></path>
                             </svg>
                         )}
-                        
                         <span className="sr-only">Toggle dark/light mode</span>
                     </button>
                 </li>

@@ -11,8 +11,7 @@
         ],
         "skills": [
             "Communication",
-            "Adaptibility",
-            "Technology"
+            "Adaptibility"
         ]
     },
     "work2": {
@@ -30,9 +29,8 @@
         ],
         "skills": [
             "Python",
-            "SQL & NoSQL",
-            "API",
-            "Prompt Engineering"
+            "Prompt Engineering",
+            "NoSQL"
         ]
     }
 }

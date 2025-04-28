@@ -12,7 +12,7 @@ function SkillCard ({name}) {
 
 function SkillList({skList}) {
     return (
-      <div className="inline-flex flex-wrap gap-2.5">
+      <div className="inline-flex flex-wrap gap-2.5 w-full">
             {skList.map((skill, index) => (
                 <SkillCard key={index} name={skill}/>   
             ))}
