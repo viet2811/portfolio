@@ -18,7 +18,7 @@ function ExperienceCard ({exp, isExpanded, setIsExpanded}){
                 <div className="border-l-2 border-solid border-[#8f99b6] h-12"></div>
             </div>
             <div className='flex-col leading-4 flex ml-4'>
-                <h3 className='text-base group-hover:!text-cyan'>{exp.position}</h3>
+                <h3 className='text-base dark:group-hover:!text-cyan group-hover:!text-blue-500'>{exp.position}</h3>
                 <div className='mb-2'>at {exp.company}</div>
                 <SkillList skList={exp.skills}/>
             </div>
@@ -81,7 +81,7 @@ function Accordion({workID}) {
     const [isExpand, setIsExpanded] = useState(false);
 
     return (
-        <div className='-ml-2.5 rounded-2xl hover:bg-[#192942] group'>
+        <div className='-ml-2.5 rounded-2xl dark:hover:bg-[#192942] hover:bg-white group'>
             <ExperienceCard exp={exp} isExpanded={isExpand} setIsExpanded={setIsExpanded}/>   
             <ExpandContent exp={exp} isExpanded={isExpand}/>  
         </div>
