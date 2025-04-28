@@ -7,6 +7,7 @@ function ExperienceCard ({exp, isExpanded, setIsExpanded}){
     return (
         <div className='items-center w-full space-x-3 flex'>
             {/* Work period */}
+            {/* TODO: Defining "fixed" width */}
             <div id="time_period" className='text-right leading-5 ml-2.5'>
                 {exp.startDate} -<br></br> {exp.endDate}
             </div>
@@ -15,6 +16,7 @@ function ExperienceCard ({exp, isExpanded, setIsExpanded}){
                 {/* Top line */}
                 <div className="border-l-2 border-solid dark:border-gray border-gray-600 h-12"></div>
                 {/* Middle circle */}
+                {/* TODO: Possible scaling here on height, weight of circle */}
                 <div className={`h-5 w-5 rounded-full border-2 border-solid  border-gray-600 group-hover:bg-gray-600 
                                 dark:group-hover:bg-gray dark:border-gray ${
                                     isExpanded ? "dark:bg-gray bg-gray-600" : ""
@@ -24,8 +26,9 @@ function ExperienceCard ({exp, isExpanded, setIsExpanded}){
             </div>
             {/* Work summary */}
             <div className='flex-col leading-4 flex ml-4'>
-                <h3 className='dark:group-hover:!text-cyan group-hover:!text-blue-500'>{exp.position}</h3>
+                <h3 className='text-base dark:group-hover:!text-cyan group-hover:!text-blue-500'>{exp.position}</h3>
                 <div className='mb-2'>at {exp.company}</div>
+                {/* Maybe do something here idk... */}
                 <SkillList skList={exp.skills}/>
             </div>
             {/* Collapse button */}
