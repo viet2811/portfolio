@@ -1,7 +1,7 @@
 {
     "project1": {
         "name": "Portfolio 2.0 (Current)",
-        "description": "Refactor version built with React and Tailwind featuring dynamic content loading, light/dark mode and mobile responsiveness",
+        "description": "Refactor version built with React and Tailwind featuring dynamic content loading, light/dark mode and responsiveness for multiple devices",
         "skills": [
             "React",
             "Tailwind CSS",
@@ -23,7 +23,7 @@
     },
     "project3": {
         "name": "Syntax Squad",
-        "description": "A unfinished team project of cooking recipes website with multi-ingredients search feature. This card only for testing purpose lmao.",
+        "description": "A 'team' project of cooking recipes website with multi-ingredients search feature, utilsing dynamic Flaks template and using pandas for multi queries.",
         "skills": [
             "Python",
             "Flask",
