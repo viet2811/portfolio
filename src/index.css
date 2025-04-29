@@ -5,7 +5,8 @@
 html {
     @apply font-mono appearance-none text-sm md:text-lg
     bg-ivory text-gray-600 /*Light mode*/
-    dark:bg-deepnavy dark:text-gray/*Dark mode; */;
+    dark:bg-deepnavy dark:text-gray/*Dark mode; */
+    antialiased;
 }
 
 @theme {

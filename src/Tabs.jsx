@@ -1,11 +1,12 @@
 import { useState } from "react";
 
 function SkillCard ({label, imageadr}){
+    const fullImagePath = `${import.meta.env.BASE_URL}${imageadr}`
     return (
         <div className="lg:w-28 lg:h-28 aspect-square border rounded-2xl flex flex-col items-center justify-center shadow-xl 
             dark:shadow-md dark:shadow-cyan-500/50"
         >
-            <img src={imageadr} alt={label + " logo"} className="w-3/7 aspect-square mb-2" />
+            <img src={fullImagePath} alt={label + " logo"} className="w-3/7 aspect-square mb-2" />
             {label}
         </div>
     );
