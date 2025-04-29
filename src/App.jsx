@@ -2,9 +2,9 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import AboutCard from "./AboutCard";
 import Tabs from "./Tabs";
-import Accordion from "./Accordion";
 import Experiences from './data/experience.json'
 import ProjectList from "./ProjectList";
+import Accordion from "./Accordion";
 
 
 function App() {
