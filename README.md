@@ -13,3 +13,8 @@ With React and Tailwind CSS, it allows a better website with..
 
 🔗 [viet2811.github.io/portfolio](https://viet2811.github.io/portfolio/)
 
+## Credit/Tools used
+- [React](https://react.dev): For building UI with reusable components
+- [Tailwind CSS](https://tailwindcss.com): For styling and responsive design
+- [Vite](https://vite.dev): For smaller and faster build tool than CRA
+- [Flowbite](https://flowbite.com): For UI component implementing Tailwind CSS
