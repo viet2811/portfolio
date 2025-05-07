@@ -2,10 +2,9 @@ import avatar from "./assets/avatar.jpg";
 
 function AboutCard (){
     return (
-        <div
-            className="max-w-screen h-auto border rounded-lg md:flex md:items-center
-                     border-gray-300 bg-white shadow-md 
-                     dark:border-gray-600 dark:bg-[#192942]"
+        <div className="max-w-screen h-auto border rounded-lg md:flex md:items-center
+                      border-gray-300 bg-white shadow-md 
+                      dark:border-gray-600 dark:bg-[#192942]"
         >
             <img 
                 src={avatar} 
