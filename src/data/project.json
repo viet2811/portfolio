@@ -1,35 +1,23 @@
 {
-    "project1": {
-        "name": "Portfolio 2.0 (Current)",
-        "description": "Refactor version built with React and Tailwind featuring dynamic content loading, light/dark mode and responsiveness for multiple devices",
-        "skills": [
-            "React",
-            "Tailwind CSS",
-            "Vite"
-        ],
-        "link": "#",
-        "gitrepo": "https://github.com/viet2811/portfolio" 
-    },
-    "project2": {
-        "name": "Portfolio 1.0",
-        "description": "A university project portfolio built with static HTML, CSS, and JavaScript with WCAG 2 guidelines in mind when designing for accessibility and usability.",
-        "skills": [
-            "HTML/CSS",
-            "JavaScript",
-            "WAVE"
-        ],
-        "link": "https://vh23aad.github.io/portfolio/",
-        "gitrepo": "https://github.com/vh23aad/portfolio"
-    },
-    "project3": {
-        "name": "Syntax Squad",
-        "description": "A 'team' project of cooking recipes website with multi-ingredients search feature, utilsing dynamic Flaks template and using pandas for multi queries.",
-        "skills": [
-            "Python",
-            "Flask",
-            "SQlite"
-        ],
-        "link": "",
-        "gitrepo": ""
-    }
+  "project1": {
+    "name": "Ocipe",
+    "description": "A digital cookbook web app made for organizing and planning personal recipes",
+    "skills": ["React", "Django", "PostgreSQL"],
+    "link": "ocipe.vercel.app",
+    "gitrepo": "https://github.com/viet2811/ocipe"
+  },
+  "project2": {
+    "name": "Portfolio 2.0 (Current)",
+    "description": "Refactor version built with React and Tailwind featuring dynamic content loading, light/dark mode and responsiveness for multiple devices",
+    "skills": ["React", "Tailwind CSS", "Vite"],
+    "link": "#",
+    "gitrepo": "https://github.com/viet2811/portfolio"
+  },
+  "project3": {
+    "name": "Portfolio 1.0",
+    "description": "A university project portfolio built with static HTML, CSS, and JavaScript with WCAG 2 guidelines in mind when designing for accessibility and usability.",
+    "skills": ["HTML/CSS", "JavaScript", "WAVE"],
+    "link": "https://vh23aad.github.io/portfolio/",
+    "gitrepo": "https://github.com/vh23aad/portfolio"
+  }
 }
